@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chilli IDE - on FIRE!</title>
+</head>
+<body style = "background-color:#ffffff;">
+
+ 	<!--This is a comment-->
+	<form method = 'POST'>
+	<p>
+            <input style = "border:1px solid black; background-color:green;" type="submit">
+     </p>
+
+     <p contenteditable=true>
+        <label for="password" id = "code" ></label>
+        {% if fileCode %}
+            <textarea style ="border:1px solid #0e1628; background-color:#f7f7f7; width:100%; height:470px;"; name="password";>{{ fileCode }}</textarea>
+        {% endif %}
+     
+    <div style="background-color:black; border:2px solid grey display: grid; grid-gap: 10px; grid-template-columns: 20% 20% auto;">
+	    {% if directory %}
+            <p>{{directory }}</p>
+	    {% endif %}
+            <input style = "background-color:#060606; border:1px solid grey; color:white;"type="text" name="username"></input>
+            <!--<label for="username"></label>-->
+	    <input style = "background-color:#060606; border:1px solid grey; color:white" type="text" name="fileNameInput">
+        <!--<label for="fileNameInput"></label>-->
+        <br>
+      {% if message %}
+         <p style = "color:white; grid-column-start: 1; grid-column-end: 4; grid-row-start: 2; grid-row-end: 3; ">{{ message }}
+
+         </p>
+     {% endif %}
+     </div>    
+      
+    </p>
+ 
+</form>
+    
+
+<script>
+    //function myFunc () {
+        //var n = document.getElementById("code").value;
+        //alert (n);
+    //}
+</script>
+ 
+</body>
+</html>
