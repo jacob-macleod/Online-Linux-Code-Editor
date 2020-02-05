@@ -11,8 +11,11 @@ If you type in 'save' in the first panel, and a file name in the second panel, y
 In chrome, you can do things like control-f to search, or enter in recently typed in terminal commands, or open the developer javascript console by pressing control-shift-i.
 
 PLANNED FEATURES:
-Syntax highlighting, hopefully in the next week
-An iframe to go to programming-related webpages, that starts off showing usage instructions
+Syntax highlighting, hopefully in the next week.
+An iframe to go to programming-related webpages, that starts off showing usage instructions.
+A dedicated 'run' button.
+A dedecated 'save' button.
+A better UI.
 
 DEVELOPMENT TEAM
 I (Jacob) am solely developing the main features, but my brother (Nathan) has agreed to help with the css of the IDE.
