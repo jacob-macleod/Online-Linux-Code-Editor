@@ -4,6 +4,8 @@ This is a flask-based python code editor for the programming of linux/windows/ma
 INSTALATION:
 It can be installed using git clone, and the code editor can be accsessed by going to the browser of another(or the same) device and typing in the ip adress or local host.
 
+REQUIREMENTS: Flask, python 3, working internet, a computer to program and a computer to program from.
+
 HOW TO USE:
 It consists of a place to enter in code and a terminal. The terminal has two places to enter text. The first is where you enter commands like 'ls -l' or 'touch code.py'. 
 If you type in 'open' in the first panel and a file name in the second panel, you open the file you typed in, and it is displayed in the textarea where you can enter code. 
