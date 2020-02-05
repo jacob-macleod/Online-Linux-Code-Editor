@@ -4,6 +4,8 @@ This is a flask-based python code editor for the programming of linux/windows/ma
 INSTALATION:
 It can be installed using git clone, and the code editor can be accsessed by going to the browser of another(or the same) device and typing in the ip adress or local host.
 
+IMPORTANT: You MUST put the index.html file in a folder called 'templates', for flask to work
+
 REQUIREMENTS: Flask, python 3, working internet, a computer to program and a computer to program from.
 
 HOW TO USE:
