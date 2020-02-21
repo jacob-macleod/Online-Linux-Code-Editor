@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chilli IDE - on FIRE!</title>
+    <script src="src-min/ace.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+
+  <style>
+
+    .if {
+    display: inline;
+    color: blue;
+}
+
+
+    body{
+      background-color:#ffffff;
+      margin: 0px;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    #CodeEditor{
+      background-color: #ffffff;
+      width:97%;
+      margin-left: 10px;
+      margin-right: 10px;
+      height:470px;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    #TerminalWrapper{
+      background-color:#3C3C3C;
+      border:2px solid grey display: grid;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      padding: 10px;
+    }
+
+    #TerminalCommand{
+      background-color:#3C3C3C;
+      border: 0px;
+      border-bottom: 1px solid #EDEDED;
+      color: white;
+      grid-column-start: 1;
+      grid-row-start: 1;
+      width: 95%;
+      padding: 5px;
+      margin: auto;
+    }
+
+    #FileNameBox{
+      background-color:#3C3C3C;
+      border: 0px;
+      border-bottom: 1px solid #EDEDED;
+      color:white;
+      grid-column-start: 2;
+      grid-row-start: 1;
+      width: 95%;
+      padding: 5px;
+      margin: auto;
+    }
+
+    #TerminalText{
+      color:white;
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 3;
+      margin-top: 0px;
+      margin-left: 5px;
+    }
+
+    #SubmitButton{
+      grid-row-start: 2;
+      grid-column-start: 2;
+
+      background-color: #ffffff;
+      border: 2px solid #686868;
+      font-size: 18px;
+      margin-right: 15px;
+      margin-left: auto;
+      margin-top: 10px;
+      width: 170px;
+      height: 40px;
+      border-radius: 10px;
+    }
+
+    #SubmitButton:hover{
+      cursor: pointer;
+    }
+
+    /*#TerminalInstructionsText{
+      color:white;
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 1;
+      grid-row-end: 2;
+    }*/
+  </style>
+
+ 	<!--This is a comment-->
+	<form method = 'POST'>
+	<p>
+            <!--<input id="SubmitButton" type="submit">-->
+     </p>
+
+     <p>
+          <label for="password" id = "code" ></label>
+        {% if fileCode %}
+          <textarea class="editor allow-tabs" id="CodeEditor" name="password">{{ fileCode }}</textarea>
+        {% endif %}
+    </p>
+     
+    <div id="TerminalWrapper">
+      <!--<p id="TerminalInstructionsText">Begin by opening a file...</p>-->
+
+            <input id="TerminalCommand" placeholder="Enter a Command..." type="text" name="username" autocomplete="off"></input>
+            <!--<label for="username"></label>-->
+            
+	    <input id="FileNameBox" placeholder="Enter a File Name..."  type="text" name="fileNameInput" autocomplete="off">
+
+      <input id="SubmitButton" type="submit">
+        <!--<label for="fileNameInput"></label>-->
+        <br>
+      {% if message %}
+         <p id="TerminalText">{{ message }}</p>
+      {% endif %}
+     </div>    
+      
+    </p>
+ 
+</form>
+    
+
+<script>
+
+</script>
+ 
+</body>
+</html>
