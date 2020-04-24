@@ -4,7 +4,7 @@ This is a flask-based python code editor for the programming of linux/windows/ma
 ### Want to try this out without installing it? Run it at https://repl.it/@JacobMacLeod/Online-Linux-Code-Editor-Github
 
 ## INSTALLATION:
-It can be installed using git clone, and the code editor can be accsessed by going to the browser of another(or the same) device and typing in the ip adress or local host.
+It can be installed using git clone. The main.py file must be run, and the code editor can be accsessed by going to the browser of another(or the same) device and typing in the ip adress or local host.
 
 ## REQUIREMENTS: Flask, python 3, working internet, a computer to program and a computer to program from.
 
